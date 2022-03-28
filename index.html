@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cyber Security News</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<style>
+    *{
+        font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .main{
+        margin:0 auto;
+    }
+    .header{
+        display:flex;
+        background:#332FD0;
+        color: white;
+        padding: 1rem 0 1rem 0;
+        margin-bottom: .25rem;
+    }
+    .logo{
+        padding-inline: 1rem;
+        font-size: 1.2rem;
+    }
+    .post{
+        display: flex;
+        height: auto;
+        background: #e3d3f2;
+        margin-bottom: .25rem;
+    }
+    #post{
+        
+    }
+    .article{
+        margin: 1rem 1rem;
+    }
+    .footer{
+        background:black;
+        height: auto;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+    .authordetails{
+        font-size: .75rem;
+    }
+    h4{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                CSL News Post
+            </div>
+        </div>
+        <script>
+        //  let ar= fetch('data.json')
+        //     .then(function (response) {
+        //         return response.json();
+        //     });
+        //  console.log(ar);  
+  $(document).ready(function () {
+  
+  // FETCHING DATA FROM JSON FILE
+  $.getJSON("data.json", 
+          function (data) {
+      var student = '';
+
+      // ITERATING THROUGH OBJECTS
+      $.each(data, function (key, value) {
+
+          //CONSTRUCTION OF ROWS HAVING
+          // DATA FROM JSON OBJECT
+          student += '<div class="post"><article class="article"><h4>'+value.title+'</h4>';
+          student += '<p>'+value.description+'</p>';
+          student += '<p><b>Malware Details</b><br>';
+          student += '<p>'+value.malware_details+'</p>';
+          student += '<p><b>Technology</b><br>';
+          student += '<ul><li>'+value.technology.technology_1+'</li>'+
+                          '<li>'+value.technology.technology_2+'</li>'+
+                          '<li>'+value.technology.technology_3+'</li></ul></p>';
+          student += '<p><b>Remedies or Solutions</b><br>';
+          student += '<ul><li>'+value.remedies.remedies_1+'</li>'+
+                          '<li>'+value.remedies.remedies_2+'</li>'+
+                          '<li>'+value.remedies.remedies_3+'</li></ul></p>'; 
+          student +=  '<p class="authordetails"> <i>by </i><b>'+value.student_name+'</b> <i>'+value.student_rollno+'</i></p></article></div>';                               
+
+      });
+        
+      //INSERTING ROWS INTO TABLE 
+      $('#post').append(student);
+  });
+});  
+</script>
+        <div id="post">
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Cyber Security and Law by Dr. Kapil Sharma</p>
+    </footer>
+</body>
+</html>

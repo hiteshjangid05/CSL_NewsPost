@@ -1,0 +1,54 @@
+[
+    {
+        "title":"Hackers Target Bank Networks with New Rootkit to Steal Money from ATM Machines.",
+        "description":"A financially motivated threat actor has been observed deploying a previously unknown rootkit targeting Oracle Solaris systems with the goal of compromising Automatic Teller Machine (ATM) switching networks and carrying out unauthorized cash withdrawals at different banks using fraudulent cards. Mandiant, which was able to recover memory forensic data from one of the victimized ATM switch servers, noted that one variant of the kernel rootkit came with specialized features that enabled it to intercept card and PIN verification messages and use the stolen data to perform fraudulent cash withdrawals from ATM terminals.",
+        "malware_details":"CAKETAPE RootKit, SLAPSTICK Backdoor.",
+        "technology":{
+            "technology_1":"STEELHOUND - used to decrypt an embedded payload and encrypt new binaries",
+            "technology_2": "WINGHOOK - A keylogger for Linux and Unix based operating systems that captures the data in an encoded format",
+            "technology_3":"MIGLOGCLEANER - An ELF utility that wipes logs or remove certain strings from logs on Linux and Unix based systems"
+        },
+        "remedies":{
+            "remedies_1":"If your bank supports two-factor authentication, be sure to enable this. This makes a keylogger far less effective, as the hacker won't be able to replicate the authentication code even if they get your login details.",
+            "remedies_2":"Install a stellar antivirus and make sure it checks your system every so often. A good antivirus will sniff out a keylogger and erase it before it can do damage.",
+            "remedies_3":"Never perform any sensitive activities on a public or unsecured network. Err on the side of caution and use something more secure, such as your home Wi-Fi. Also, when you log into a sensitive site, always check for HTTPS in the address bar. If it's not there, there's a good chance you're looking at a fake site!"
+        },
+        "student_name":"SAKET KUMAR AGARWAL",
+        "student_rollno":"2K21/ISY/21"
+     },  
+     {
+        "title":"GhostCringe Targets weakly configured Microsoft SQL,MYSQL Servers.",
+        "description":"Researchers have identified that the actors behind the Gh0stCringe remote access trojan are targeting Microsoft SQL and MySQL database servers. Gh0stCringe, which is thought to be active since 2018, is a known variant of Gh0st RAT malware.",
+        "malware_details":" Gh0stCringe , aka CirenegRAT.",
+        "technology":{
+            "technology_1":"The malware is targeting weakly configured database servers, including Microsoft SQL and MySQL servers, with easy to crack passwords.",
+            "technology_2":"The malware is targeting weakly configured database servers, including Microsoft SQL and MySQL servers, with easy to crack passwords.",
+            "technology_3":"The malware allows the attack to connect to a URL using Internet Explorer, destroy the Master Boot Record (MBR), register run keys, and terminate the host system."
+        },
+        "remedies":{
+            "remedies_1":"To stay protected from such threats, researchers recommend using difficult to guess passwords and periodic updates of these passwords to prevent brute-force attacks.",
+            "remedies_2":"To stay protected from such threats, researchers recommend using difficult to guess passwords and periodic updates of these passwords to prevent brute-force attacks.",
+            "remedies_3":"Frequently patching the servers exposed to the internet and using additional security layers such as firewalls further help fend off such attacks."
+        },
+        "student_name":"AARTI SONI",
+        "student_rollno":"2K21/ISY/01"
+     },
+     {
+        "title":"Cyber Attack on San Francisco's MUNI light-rail system",
+        "description":"San Francisco's daily commuters to work were given an irksome surprise one morning in 2016. Hackers used ransomware called Mamba to compromise the city's Municipal Railway (MUNI) light-rail, breaching the system to access and encrypt over 2000 office systems.",
+        "malware_details":"Hackers used ransomware called Mamba. Mamba consists of DiskCryptor wrapped in a program. The ransomware uses this program, along with a key of the attackers' choosing, to install and begin disk encryption in the background, the warning noted. From there, Mamba extracts some files and installs an encryption service. Mamba ransomware has been deployed against local governments, public transportation agencies, legal services, technology services, industrial, commercial, manufacturing, and construction businesses. Mamba ransomware weaponizes DiskCryptor—an open source full disk encryption software— to restrict victim access by encrypting an entire drive, including the operating system.",
+        "technology":{
+            "technology_1":"Using an open source tool called DiskCryptor, it's able to do great damage by deeply encrypting all the data found on the target machine's hard drive. It uses a disk-level encryption system, which seems to be a growing trend in the rapid spread of ransomware. “You Are Hacked,” says the message left by Mamba, along with a number victims are expected, via a unique ID, to call to find out where to pay the bitcoin worth of ransom (worth around $600) and get the private decryption key.",
+            "technology_2":"This latest ransomware strain blocks the machine's OS from even booting up and overwrites the boot disk master boot record, or MBR replacing it with a custom MBR that displays the ransom note asking for the decryption password. As soon as the malware variant is introduced on the targeted machine, it will reboot, but before the reboot, Mamba installs itself as a fake defragmentation service via Windows, which looks like the image at left.",
+            "technology_3":"This latest ransomware strain blocks the machine's OS from even booting up and overwrites the boot disk master boot record, or MBR replacing it with a custom MBR that displays the ransom note asking for the decryption password. As soon as the malware variant is introduced on the targeted machine, it will reboot, but before the reboot, Mamba installs itself as a fake defragmentation service via Windows, which looks like the image at left."
+        },
+        "remedies":{
+            "remedies_1":"Backups are critical. Use a backup system that allows multiple iterations of the backups to be saved, in case a copy of the backups includes encrypted or infected files. Routinely test backups for data integrity and to ensure it is operational.",
+            "remedies_2":"Use antivirus and anti-spam solutions. Enable regular system and network scans with antivirus programs enabled to automatically update signatures. Implement an anti-spam solution to stop phishing emails from reaching the network. Consider adding a warning banner to all emails from external sources that reminds users of the dangers of clicking on links and opening attachments.",
+            "remedies_3":"Keep all systems patched, including all hardware, including mobile devices, operating systems, software, and applications, including cloud locations and content management systems (CMS), patched and up-to-date. Use a centralized patch management system if possible. Implement application white-listing and software restriction policies (SRP) to prevent the execution of programs in common ransomware locations, such as temporary folders. Also,Apply the principles of least privilege and network segmentation. Categorize and separate data based on organizational value and where possible, implement virtual environments and the physical and logical separation of networks and data. Apply the principle of least privilege."
+        },
+        "student_name":"Himanshu Verma",
+        "student_rollno":"2k21/ISY/09"
+     }
+     
+]
