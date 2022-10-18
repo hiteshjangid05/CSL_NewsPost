@@ -67,5 +67,22 @@
         "student_name":"Hitesh Jangid",
         "student_rollno":"2K21/ISY/10"
      },  
+     {
+        "title":"Cyber Attack on San Francisco's MUNI light-rail system",
+        "description":"San Francisco's daily commuters to work were given an irksome surprise one morning in 2016. Hackers used ransomware called Mamba to compromise the city's Municipal Railway (MUNI) light-rail, breaching the system to access and encrypt over 2000 office systems.",
+        "malware_details":"Hackers used ransomware called Mamba. Mamba consists of DiskCryptor wrapped in a program. The ransomware uses this program, along with a key of the attackers' choosing, to install and begin disk encryption in the background, the warning noted. From there, Mamba extracts some files and installs an encryption service. Mamba ransomware has been deployed against local governments, public transportation agencies, legal services, technology services, industrial, commercial, manufacturing, and construction businesses. Mamba ransomware weaponizes DiskCryptor—an open source full disk encryption software— to restrict victim access by encrypting an entire drive, including the operating system.",
+        "technology":{
+            "technology_1":"Using an open source tool called DiskCryptor, it's able to do great damage by deeply encrypting all the data found on the target machine's hard drive. It uses a disk-level encryption system, which seems to be a growing trend in the rapid spread of ransomware. “You Are Hacked,” says the message left by Mamba, along with a number victims are expected, via a unique ID, to call to find out where to pay the bitcoin worth of ransom (worth around $600) and get the private decryption key.",
+            "technology_2":"This latest ransomware strain blocks the machine's OS from even booting up and overwrites the boot disk master boot record, or MBR replacing it with a custom MBR that displays the ransom note asking for the decryption password. As soon as the malware variant is introduced on the targeted machine, it will reboot, but before the reboot, Mamba installs itself as a fake defragmentation service via Windows, which looks like the image at left.",
+            "technology_3":"This latest ransomware strain blocks the machine's OS from even booting up and overwrites the boot disk master boot record, or MBR replacing it with a custom MBR that displays the ransom note asking for the decryption password. As soon as the malware variant is introduced on the targeted machine, it will reboot, but before the reboot, Mamba installs itself as a fake defragmentation service via Windows, which looks like the image at left."
+        },
+        "remedies":{
+            "remedies_1":"Backups are critical. Use a backup system that allows multiple iterations of the backups to be saved, in case a copy of the backups includes encrypted or infected files. Routinely test backups for data integrity and to ensure it is operational.",
+            "remedies_2":"Use antivirus and anti-spam solutions. Enable regular system and network scans with antivirus programs enabled to automatically update signatures. Implement an anti-spam solution to stop phishing emails from reaching the network. Consider adding a warning banner to all emails from external sources that reminds users of the dangers of clicking on links and opening attachments.",
+            "remedies_3":"Keep all systems patched, including all hardware, including mobile devices, operating systems, software, and applications, including cloud locations and content management systems (CMS), patched and up-to-date. Use a centralized patch management system if possible. Implement application white-listing and software restriction policies (SRP) to prevent the execution of programs in common ransomware locations, such as temporary folders. Also,Apply the principles of least privilege and network segmentation. Categorize and separate data based on organizational value and where possible, implement virtual environments and the physical and logical separation of networks and data. Apply the principle of least privilege."
+        },
+        "student_name":"Abhishek Singh",
+        "student_rollno":"2k21/ISY/03"
+     }
      
 ]
