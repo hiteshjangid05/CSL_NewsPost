@@ -100,6 +100,23 @@
         },
         "student_name":"Abhishek Singh",
         "student_rollno":"2k21/ISY/03"
+     },
+    {
+        "title":"Hackers Target Bank Networks with New Rootkit to Steal Money from ATM Machines.",
+        "description":"A financially motivated threat actor has been observed deploying a previously unknown rootkit targeting Oracle Solaris systems with the goal of compromising Automatic Teller Machine (ATM) switching networks and carrying out unauthorized cash withdrawals at different banks using fraudulent cards. Mandiant, which was able to recover memory forensic data from one of the victimized ATM switch servers, noted that one variant of the kernel rootkit came with specialized features that enabled it to intercept card and PIN verification messages and use the stolen data to perform fraudulent cash withdrawals from ATM terminals.",
+        "malware_details":"CAKETAPE RootKit, SLAPSTICK Backdoor.",
+        "technology":{
+            "technology_1":"STEELHOUND - used to decrypt an embedded payload and encrypt new binaries",
+            "technology_2": "WINGHOOK - A keylogger for Linux and Unix based operating systems that captures the data in an encoded format",
+            "technology_3":"MIGLOGCLEANER - An ELF utility that wipes logs or remove certain strings from logs on Linux and Unix based systems"
+        },
+        "remedies":{
+            "remedies_1":"If your bank supports two-factor authentication, be sure to enable this. This makes a keylogger far less effective, as the hacker won't be able to replicate the authentication code even if they get your login details.",
+            "remedies_2":"Install a stellar antivirus and make sure it checks your system every so often. A good antivirus will sniff out a keylogger and erase it before it can do damage.",
+            "remedies_3":"Never perform any sensitive activities on a public or unsecured network. Err on the side of caution and use something more secure, such as your home Wi-Fi. Also, when you log into a sensitive site, always check for HTTPS in the address bar. If it's not there, there's a good chance you're looking at a fake site!"
+        },
+        "student_name":"Akshara Jangid",
+        "student_rollno":"2"
      }
      
 ]
